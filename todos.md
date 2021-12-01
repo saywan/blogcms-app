@@ -1,6 +1,14 @@
 # Features
 
 - authentication []
+  - packages
+    - ui:bootstrap
+    - breeze:tailwind
+    - fortify
+    - jetstream
+    - passport
+    - sanctum
+   
   - register []
   - login []   
 - Role User []
