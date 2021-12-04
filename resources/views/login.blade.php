@@ -8,11 +8,12 @@
             <h1 class="sign-page__title">ورود به وب‌سایت</h1>
 
             <form class="sign-page__form">
-                <form action="">
-                    <input type="text" class="text text--left" placeholder="شماره یا ایمیل">
-                    <input type="pass" class="text text--left" placeholder="رمز عبور">
+                <form action="{{route('login')}}" method="post">
+                    @csrf
+                    <input type="text" name="email" class="text text--left" placeholder="شماره یا ایمیل">
+                    <input type="password" name="password"   class="text text--left" placeholder="رمز عبور">
                     <label class="checkbox text--right">
-                        <input type="checkbox" class="checkbox__filter">
+                        <input type="checkbox" class="checkbox__filter" name="">
                         <span class="checkbox__mark position-relative"></span>
                         مرا بخاطر بسپار
                     </label>
